@@ -10,7 +10,6 @@
 		A14676012A7031F800CBEE5A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14676002A7031F800CBEE5A /* CardView.swift */; };
 		A14676032A70333B00CBEE5A /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14676022A70333B00CBEE5A /* CartManager.swift */; };
 		A14676052A7038F200CBEE5A /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14676042A7038F200CBEE5A /* ProductRow.swift */; };
-		A14676072A703F9B00CBEE5A /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14676062A703F9B00CBEE5A /* PaymentButton.swift */; };
 		A1B648D72A6EDFBA008AEFC9 /* Commerce.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B648D62A6EDFBA008AEFC9 /* Commerce.swift */; };
 		A1B648D92A6EEE62008AEFC9 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B648D82A6EEE62008AEFC9 /* ForgotPassword.swift */; };
 		A1B648DE2A6F54CF008AEFC9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A1B648DD2A6F54CF008AEFC9 /* FirebaseAnalytics */; };
@@ -43,6 +42,7 @@
 		A1B649162A6F5F79008AEFC9 /* products.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B649152A6F5F79008AEFC9 /* products.swift */; };
 		A1B649192A6F74B0008AEFC9 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B649182A6F74B0008AEFC9 /* ProductCard.swift */; };
 		A1B6491B2A6F85C9008AEFC9 /* CardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6491A2A6F85C9008AEFC9 /* CardButton.swift */; };
+		A1B770792A707AC90089C251 /* PayPalCheckout in Frameworks */ = {isa = PBXBuildFile; productRef = A1B770782A707AC90089C251 /* PayPalCheckout */; };
 		A1E242742A6DCA330006646B /* ecommercePracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E242732A6DCA330006646B /* ecommercePracticeApp.swift */; };
 		A1E242762A6DCA330006646B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E242752A6DCA330006646B /* ContentView.swift */; };
 		A1E242782A6DCA360006646B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E242772A6DCA360006646B /* Assets.xcassets */; };
@@ -76,7 +76,6 @@
 		A14676002A7031F800CBEE5A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A14676022A70333B00CBEE5A /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		A14676042A7038F200CBEE5A /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
-		A14676062A703F9B00CBEE5A /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 		A1B648D62A6EDFBA008AEFC9 /* Commerce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commerce.swift; sourceTree = "<group>"; };
 		A1B648D82A6EEE62008AEFC9 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		A1B649152A6F5F79008AEFC9 /* products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = products.swift; sourceTree = "<group>"; };
@@ -121,6 +120,7 @@
 				A1B649122A6F54CF008AEFC9 /* FirebaseStorageCombine-Community in Frameworks */,
 				A1B6490C2A6F54CF008AEFC9 /* FirebaseRemoteConfig in Frameworks */,
 				A1B648E82A6F54CF008AEFC9 /* FirebaseAppDistribution-Beta in Frameworks */,
+				A1B770792A707AC90089C251 /* PayPalCheckout in Frameworks */,
 				A1B648EC2A6F54CF008AEFC9 /* FirebaseAuthCombine-Community in Frameworks */,
 				A1B6490A2A6F54CF008AEFC9 /* FirebasePerformance in Frameworks */,
 				A1B649022A6F54CF008AEFC9 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
@@ -175,7 +175,6 @@
 				A1B649182A6F74B0008AEFC9 /* ProductCard.swift */,
 				A1B6491A2A6F85C9008AEFC9 /* CardButton.swift */,
 				A14676042A7038F200CBEE5A /* ProductRow.swift */,
-				A14676062A703F9B00CBEE5A /* PaymentButton.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -285,6 +284,7 @@
 				A1B6490D2A6F54CF008AEFC9 /* FirebaseRemoteConfigSwift */,
 				A1B6490F2A6F54CF008AEFC9 /* FirebaseStorage */,
 				A1B649112A6F54CF008AEFC9 /* FirebaseStorageCombine-Community */,
+				A1B770782A707AC90089C251 /* PayPalCheckout */,
 			);
 			productName = ecommercePractice;
 			productReference = A1E242702A6DCA330006646B /* ecommercePractice.app */;
@@ -360,6 +360,7 @@
 			mainGroup = A1E242672A6DCA320006646B;
 			packageReferences = (
 				A1B648DC2A6F54CF008AEFC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A1B770772A707AC80089C251 /* XCRemoteSwiftPackageReference "paypalcheckout-ios" */,
 			);
 			productRefGroup = A1E242712A6DCA330006646B /* Products */;
 			projectDirPath = "";
@@ -412,7 +413,6 @@
 				A14676012A7031F800CBEE5A /* CardView.swift in Sources */,
 				A1B648D72A6EDFBA008AEFC9 /* Commerce.swift in Sources */,
 				A1E242742A6DCA330006646B /* ecommercePracticeApp.swift in Sources */,
-				A14676072A703F9B00CBEE5A /* PaymentButton.swift in Sources */,
 				A14676052A7038F200CBEE5A /* ProductRow.swift in Sources */,
 				A1E242AD2A6E3D8D0006646B /* SignIn.swift in Sources */,
 				A1B648D92A6EEE62008AEFC9 /* ForgotPassword.swift in Sources */,
@@ -751,6 +751,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		A1B770772A707AC80089C251 /* XCRemoteSwiftPackageReference "paypalcheckout-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paypal/paypalcheckout-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -888,6 +896,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A1B648DC2A6F54CF008AEFC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		A1B770782A707AC90089C251 /* PayPalCheckout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B770772A707AC80089C251 /* XCRemoteSwiftPackageReference "paypalcheckout-ios" */;
+			productName = PayPalCheckout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

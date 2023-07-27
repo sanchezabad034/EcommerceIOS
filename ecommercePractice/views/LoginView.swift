@@ -103,7 +103,7 @@ struct LoginView: View {
                        
                         
                         NavigationLink(
-                            destination: Commerce(), isActive: $commerce, label: {
+                            destination: Commerce().navigationBarBackButtonHidden(true), isActive: $commerce, label: {
                                 Button("Log In"){
                                     login()
                                 }.frame(width: 280, height: 50)
@@ -136,6 +136,7 @@ struct LoginView: View {
                 }
             }
         }.navigationBarHidden(true)
+            
  
     }
     func login() {

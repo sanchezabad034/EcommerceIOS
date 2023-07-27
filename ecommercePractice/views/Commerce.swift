@@ -36,6 +36,7 @@ struct Commerce: View {
                 .toolbarRole(.editor)
             }
             .navigationViewStyle(StackNavigationViewStyle())
+            .navigationBarBackButtonHidden(true)
            
         }
     }
